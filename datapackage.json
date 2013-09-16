@@ -1,0 +1,65 @@
+{
+  "name": "admin-division-uganda",
+  "datapackage_version": "1.0",
+  "title": "Uganda administrative divisions",
+  "description": "The administrative divisions of Uganda, up to the sub-county level. The data comes from a 2011 PDF from the Electoral Commission of Uganda and processed into a normalized CSV. The data about the regions was sourced from Wikipedia.",
+  "version": "1.0",
+  "keywords": ["Administrative divisions", "Uganda"],
+  "licenses": [{
+    "url": "http://opendatacommons.org/licenses/pddl/",
+    "name": "Open Data Commons Public Domain",
+    "version": "1.0",
+    "id": "odc-pddl"
+  }],
+  "sources": [
+    {
+      "name": "Electoral Commission of Uganda",
+      "path": "source/Summary EAs Subcounty.pdf"
+    },
+    {
+      "name": "Wikipedia",
+      "web": "http://en.wikipedia.org/wiki/Districts_of_Uganda"
+    }
+  ],
+  "contributors":[ {
+    "name": "Olaf Veerman",
+    "email": "olaf.veerman@flipside.org",
+  }],
+  "resources": [
+    {
+      "path": "data.csv",
+      "schema": {
+        "fields": [
+          {
+            "id": "ID",
+            "type": "string"
+          },
+          {
+            "id": "Name",
+            "type": "string"
+          },
+          {
+            "id": "Type",
+            "type": "string"
+          },
+          {
+            "id": "District",
+            "type": "string"
+          },
+          {
+            "id": "County",
+            "type": "string"
+          },
+          {
+            "id": "Sub-county",
+            "type": "string"
+          },
+          {
+            "id": "Region",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ]
+}
